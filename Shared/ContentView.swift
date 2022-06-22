@@ -8,36 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        
-        VStack(alignment: .leading, spacing: 4.0) {
-            Spacer()
-            HStack {
-                Spacer()
-                Image("Illustration 1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Spacer()
-            }
-            Text("SwiftUI for IOS 15")
-                .fontWeight(.bold)
-                .foregroundColor(Color.white)
-            Text("Design AppUI").font(.footnote)
-                .foregroundColor(Color.white)
-
-        }
-        .padding(.all)
-        .background(Color.blue)
-        .cornerRadius(20.0)
-        .shadow(radius: 10)
-        
-        
-    }
+  
+  @ViewBuilder
+  var body: some View {
+    
+    #if os(iOS)
+    Sidebar()
+    #else
+    Sidebar()
+      .frame(minWidth: 1000, maxWidth: 600)
+    #endif
+    
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-        
-    }
+  static var previews: some View {
+    ContentView()
+    
+  }
 }
