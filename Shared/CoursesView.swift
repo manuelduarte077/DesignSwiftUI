@@ -11,20 +11,34 @@ struct CoursesView: View {
   
   
   @State var show = false
-
+  @Namespace var namespace
+  
   var body: some View{
     
     ZStack {
       CoursesItem()
+        .matchedGeometryEffect(id: "Card", in: namespace, isSource: !show)
         .frame(width: 335, height: 250)
       
-      VStack {
-        if show {
+      
+      if show {
+        ScrollView {
           CoursesItem()
-            .transition(.move(edge: .leading))
-            .edgesIgnoringSafeArea(.all)
+            .matchedGeometryEffect(id: "Card", in: namespace)
+            .frame(height: 300)
+          
+          VStack {
+            ForEach(0 ..< 20) { item in
+              CourseRow()
+            }
+          }
+          .padding()
+          
         }
+        .transition(.opacity)
+        .edgesIgnoringSafeArea(.all)
       }
+      
       
     }
     .onTapGesture {
@@ -38,7 +52,7 @@ struct CoursesView: View {
 }
 
 struct CoursesView_Previews: PreviewProvider {
-    static var previews: some View {
-        CoursesView()
-    }
+  static var previews: some View {
+    CoursesView()
+  }
 }
