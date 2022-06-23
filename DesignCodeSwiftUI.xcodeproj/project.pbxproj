@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		645033C328643F3900F9327F /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645033C228643F3900F9327F /* CloseButton.swift */; };
+		645033C428643F3900F9327F /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645033C228643F3900F9327F /* CloseButton.swift */; };
 		6468BED42862D7D600A3D73B /* CoursesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468BED32862D7D600A3D73B /* CoursesItem.swift */; };
 		6468BED52862D7D600A3D73B /* CoursesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468BED32862D7D600A3D73B /* CoursesItem.swift */; };
 		6468BED82862DA7B00A3D73B /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468BED72862DA7B00A3D73B /* CourseList.swift */; };
@@ -28,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		645033C228643F3900F9327F /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		6468BED32862D7D600A3D73B /* CoursesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesItem.swift; sourceTree = "<group>"; };
 		6468BED72862DA7B00A3D73B /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		6472C427286425EA0075474B /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 				64FE071E2860464200A52D66 /* Items */,
 				645033C128642DAA00F9327F /* Model */,
 				64FE071F2860464E00A52D66 /* CoursesView.swift */,
+				645033C228643F3900F9327F /* CloseButton.swift */,
 				6468BED72862DA7B00A3D73B /* CourseList.swift */,
 				64FE06FD2860118800A52D66 /* DesignCodeSwiftUIApp.swift */,
 				64FE06FF2860118800A52D66 /* Assets.xcassets */,
@@ -227,6 +231,7 @@
 				6472C428286425EA0075474B /* Course.swift in Sources */,
 				64FE070F2860118800A52D66 /* ContentView.swift in Sources */,
 				64FE071C2860462600A52D66 /* Sidebar.swift in Sources */,
+				645033C328643F3900F9327F /* CloseButton.swift in Sources */,
 				6468BED82862DA7B00A3D73B /* CourseList.swift in Sources */,
 				64FE070D2860118800A52D66 /* DesignCodeSwiftUIApp.swift in Sources */,
 				6468BED42862D7D600A3D73B /* CoursesItem.swift in Sources */,
@@ -242,6 +247,7 @@
 				6472C429286425EA0075474B /* Course.swift in Sources */,
 				64FE07102860118800A52D66 /* ContentView.swift in Sources */,
 				64FE071D2860462600A52D66 /* Sidebar.swift in Sources */,
+				645033C428643F3900F9327F /* CloseButton.swift in Sources */,
 				6468BED92862DA7B00A3D73B /* CourseList.swift in Sources */,
 				64FE070E2860118800A52D66 /* DesignCodeSwiftUIApp.swift in Sources */,
 				6468BED52862D7D600A3D73B /* CoursesItem.swift in Sources */,
