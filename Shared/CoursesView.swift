@@ -12,6 +12,8 @@ struct CoursesView: View {
 	
 	@State var show = false
 	@Namespace var namespace
+	@State var selectedItem: Course? = nil
+	@State var isDisabled = false
 	
 	var body: some View{
 		
@@ -22,6 +24,14 @@ struct CoursesView: View {
 						CoursesItem(course: item)
 							.matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
 							.frame(width: 335, height: 250)
+							.onTapGesture {
+								withAnimation(.spring()) {
+									show.toggle()
+									selectedItem = item
+									isDisabled = true
+								}
+							}
+							.disabled(isDisabled)
 					}
 					
 				}
@@ -29,11 +39,20 @@ struct CoursesView: View {
 			}
 			
 			
-			if show {
+			if selectedItem != nil {
 				ScrollView {
-					CoursesItem(course: courses[0])
-						.matchedGeometryEffect(id: courses[0].id, in: namespace)
+					CoursesItem(course: selectedItem!)
+						.matchedGeometryEffect(id: selectedItem!.id, in: namespace)
 						.frame(height: 300)
+						.onTapGesture {
+							withAnimation(.spring()) {
+								show.toggle()
+								selectedItem = nil
+								DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
+									isDisabled = false
+								}
+							}
+						}
 					
 					VStack {
 						ForEach(0 ..< 20) { item in
@@ -61,11 +80,6 @@ struct CoursesView: View {
 			}
 			
 			
-		}
-		.onTapGesture {
-			withAnimation(.spring()) {
-				show.toggle()
-			}
 		}
 		
 	}
