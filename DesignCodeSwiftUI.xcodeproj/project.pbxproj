@@ -23,6 +23,8 @@
 		6468BED52862D7D600A3D73B /* CoursesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468BED32862D7D600A3D73B /* CoursesItem.swift */; };
 		6468BED82862DA7B00A3D73B /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468BED72862DA7B00A3D73B /* CourseList.swift */; };
 		6468BED92862DA7B00A3D73B /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468BED72862DA7B00A3D73B /* CourseList.swift */; };
+		64A12B2B28679FCC00B7D9DC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A12B2A28679FCC00B7D9DC /* TabBar.swift */; };
+		64A12B2C28679FCC00B7D9DC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A12B2A28679FCC00B7D9DC /* TabBar.swift */; };
 		64EEB4B32867803600AB7CD0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEB4B22867803600AB7CD0 /* VisualEffectBlur.swift */; };
 		64EEB4B52867804D00AB7CD0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEB4B42867804D00AB7CD0 /* VisualEffectBlur.swift */; };
 		64FE070D2860118800A52D66 /* DesignCodeSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FE06FD2860118800A52D66 /* DesignCodeSwiftUIApp.swift */; };
@@ -52,6 +54,7 @@
 		645033C228643F3900F9327F /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		6468BED32862D7D600A3D73B /* CoursesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesItem.swift; sourceTree = "<group>"; };
 		6468BED72862DA7B00A3D73B /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		64A12B2A28679FCC00B7D9DC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		64EEB4B22867803600AB7CD0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		64EEB4B42867804D00AB7CD0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		64FE06FD2860118800A52D66 /* DesignCodeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 			children = (
 				64FE06FE2860118800A52D66 /* ContentView.swift */,
 				64FE071B2860462600A52D66 /* Sidebar.swift */,
+				64A12B2A28679FCC00B7D9DC /* TabBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -267,6 +271,7 @@
 				6422E5F22866ED89008D1A45 /* Download.swift in Sources */,
 				6422E5F42866ED89008D1A45 /* Livestream.swift in Sources */,
 				6422E5F52866ED89008D1A45 /* GradientModel.swift in Sources */,
+				64A12B2B28679FCC00B7D9DC /* TabBar.swift in Sources */,
 				645033C328643F3900F9327F /* CloseButton.swift in Sources */,
 				6422E5F12866ED89008D1A45 /* LivestreamSection.swift in Sources */,
 				6468BED82862DA7B00A3D73B /* CourseList.swift in Sources */,
@@ -285,6 +290,7 @@
 			files = (
 				64FE07102860118800A52D66 /* ContentView.swift in Sources */,
 				64FE071D2860462600A52D66 /* Sidebar.swift in Sources */,
+				64A12B2C28679FCC00B7D9DC /* TabBar.swift in Sources */,
 				642268702866EA080061B15E /* CourseDetail.swift in Sources */,
 				645033C428643F3900F9327F /* CloseButton.swift in Sources */,
 				6468BED92862DA7B00A3D73B /* CourseList.swift in Sources */,

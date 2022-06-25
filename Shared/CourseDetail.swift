@@ -23,10 +23,10 @@ struct CourseDetail: View {
 		VStack {
 			
 		#if os(iOS)
-					content
-						.edgesIgnoringSafeArea(.all)
+			 content
+				.edgesIgnoringSafeArea(.all)
 		#else
-					content
+			 content
 		#endif
 		}
 	}

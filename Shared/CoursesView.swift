@@ -36,6 +36,17 @@ struct CoursesView: View {
 	
 	var content: some View{
 		ScrollView {
+			
+			VStack(spacing: 0) {
+				Text("Courses")
+					.font(.largeTitle)
+					.bold()
+					.frame(maxWidth: .infinity, alignment: .leading)
+					.padding(.leading, 16)
+					.padding(.top, 54)
+			}
+			
+			
 			LazyVGrid (
 				columns: [GridItem(.adaptive(minimum: 160), spacing: 16)], spacing: 16) {
 					ForEach(courses) { item in
@@ -59,6 +70,18 @@ struct CoursesView: View {
 				}
 				.padding(16)
 				.frame(maxWidth: .infinity)
+			
+			Text("Latest sections")
+				.fontWeight(.semibold)
+				.frame(maxWidth: .infinity, alignment: .leading)
+				.padding()
+			
+			LazyVGrid(columns: [GridItem(.adaptive(minimum: 240))]) {
+				ForEach(courseSections) { item in
+					CourseRow(item: item)
+				}
+			}
+			.padding()
 		}
 		.zIndex(1)
 		
