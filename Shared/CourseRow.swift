@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct CourseRow: View {
+	
+	var item: CourseSection = courseSections[0]
+
 	var body: some View {
-		Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		HStack(alignment: .top) {
+			Image(item.logo)
+				.renderingMode(.original)
+				.frame(width: 48.0, height: 48.0)
+				.imageScale(.medium)
+				.background(item.color)
+				.clipShape(Circle())
+			VStack(alignment: .leading, spacing: 4.0) {
+				Text(item.title)
+					.font(.subheadline)
+					.bold()
+				Text(item.subtitle)
+					.font(.footnote)
+					.foregroundColor(.secondary)
+			}
+			Spacer()
+		}
 	}
 }
 

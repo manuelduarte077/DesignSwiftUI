@@ -22,7 +22,7 @@ struct CourseDetail: View {
 				
 				
 				VStack {
-					ForEach(0 ..< 20) { item in
+					ForEach(courseSections) { item in
 						CourseRow()
 					}
 				}

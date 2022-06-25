@@ -10,7 +10,7 @@ import SwiftUI
 struct CoursesView: View {
 	
 	
-	@State var show = false
+	@State var show = false 
 	@Namespace var namespace
 	@State var selectedItem: Course? = nil
 	@State var isDisabled = false
