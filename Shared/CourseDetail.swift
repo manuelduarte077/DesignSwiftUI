@@ -17,6 +17,8 @@ struct CourseDetail: View {
 	#else
 		var cornerRadius: CGFloat = 10
 	#endif
+    
+    @State var showModal = false
 	
 	@ViewBuilder
 	var body: some View {
@@ -39,11 +41,17 @@ struct CourseDetail: View {
 			
 			VStack {
 				ForEach(courseSections) { item in
-					CourseRow()
+					CourseRow(item: item)
+                        .sheet(isPresented: $showModal) {
+                            CourseSectionDetail()
+                        }
+                        .onTapGesture {
+                            showModal = true
+                        }
+                    Divider()
 				}
 			}
 			.padding()
-			
 		}
 		.background(Color("Background 1"))
 		.clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
